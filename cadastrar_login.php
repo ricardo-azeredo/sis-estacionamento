@@ -25,7 +25,7 @@
                 $sql = $pdo->prepare( "INSERT INTO usuario (nome,email,senha) VALUES (:name, :email, :password)" );
                 $sql->bindValue(':name', $name); 
                 $sql->bindValue(':email', $email); 
-                $sql->bindValue(':password', $password_hash); 
+                $sql->bindValue(':password', $password_hash);                 
                 $sql->execute();
 
                 
@@ -34,17 +34,17 @@
                 exit;
             } else {
                 $_SESSION['msg'] = "Erro: As Senhas não Batem!";
-                header('Location: inscrever.php ');
+                header('Location: cadastrar.php ');
                 exit;
             }
         } else {
             $_SESSION['msg'] = "Erro: E-mail já cadastrado!";
-            header('Location: inscrever.php ');
+            header('Location: cadastrar.php ');
             exit;
         }
     } else {
         $_SESSION['msg'] = "Erro: Necessário preencher todos os campos!";
-        header('Location: inscrever.php ');
+        header('Location: cadastrar.php ');
         exit;
     }
 

@@ -1,6 +1,7 @@
 <?php
     session_start();
     ob_start();
+    require 'config.php';
     require 'head.php';
 
     if((!isset($_SESSION['id'])) && (!isset($_SESSION['nome']))){
@@ -8,9 +9,18 @@
         header("Location: login.php");
         exit;
     } 
+
+
+
+
 ?>
-<h1>Home</h1>
-<h2>Bem-vindo, <?php echo $_SESSION['nome'] ?></h2>
-<a href="sair.php">Sair</a>
+    <?php include 'header.php'; ?>
+
+    <div class="container">
+        <div class="profile">
+            <a href="profile.php" class="btn btn-primary">Perfil do Operador</a>
+        </div>
+        
+    </div>
 
 <?php include 'footer.php'; ?>
