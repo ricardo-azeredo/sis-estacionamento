@@ -17,8 +17,11 @@ ob_start();
         <div class="mudar">
             <h1>Trocar Avatar</h1>
             <form action="recebedor.php" method="post" enctype="multipart/form-data" />
-                <input type="file" name="arquivo" />
-                <input type="submit" value="Enviar">
+            <div class="mb-3">
+                <label for="formFile" class="form-label">Default file input example</label>
+                <input class="form-control" type="file" name="arquivo">
+            </div>
+            <input type="submit" class="btn btn-primary" value="Enviar">
             </form>
         </div>
 
