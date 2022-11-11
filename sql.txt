@@ -30,6 +30,7 @@ create table estacionamento(
     cliente_id int not null,
     data date,
     hora time,
+    status int default '0',
     foreign key (operador_id) references usuario(id),
     foreign key (cliente_id) references clientes(id)
 )

@@ -10,18 +10,19 @@ ob_start();
 ?>
 
 <div class="container">
-    <h1>Perfil - <?php echo $_SESSION['nome'] ?></h1>
+    <h1>Perfil do Operador - <?php echo $_SESSION['nome'] ?></h1>
         <div class="avatar">
             <img src="profile/<?=$banco['avatar']; ?>" alt="">
         </div>
         <div class="mudar">
-            <h1>Trocar Avatar</h1>
+            
             <form action="recebedor.php" method="post" enctype="multipart/form-data" />
             <div class="mb-3">
-                <label for="formFile" class="form-label">Default file input example</label>
+                <label for="formFile" class="form-label">Trocar Avatar</label>
                 <input class="form-control" type="file" name="arquivo">
             </div>
             <input type="submit" class="btn btn-primary" value="Enviar">
+            <a href="index.php" class="btn btn-danger">Voltar</a>
             </form>
         </div>
 

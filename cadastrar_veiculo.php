@@ -65,7 +65,7 @@
             </label>
         </div>
         <input type="submit" class="btn btn-primary" name="Cadastrar" value="Cadastrar">
-
+        <a href="index.php" class="btn btn-danger">Cancelar</a>
     </form>
 
 </div>
