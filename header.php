@@ -9,7 +9,7 @@
     </div>
     <div class="nav-right">
         <img class="avatar-header" src="profile/<?=$banco['avatar']; ?>" alt="">
-        <?php echo $_SESSION['nome'] ?>
+        <?php echo $banco['nome'] ?>
         <a href="sair.php">Sair</a>
     </div>        
 </header>
