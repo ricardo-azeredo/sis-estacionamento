@@ -52,8 +52,7 @@
                     <th>Operador</th>
                 </tr>
             <?php foreach($lista as $pessoa): ?>
-                <tr>
-                   
+                <tr>                   
                     <td><?=date("d/m/Y",strtotime($pessoa[1]));?></td>
                     <td><?=$pessoa[2]?></td>
                     <td><?=$pessoa[3]?></td>
