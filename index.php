@@ -53,7 +53,8 @@
                 </tr>
             <?php foreach($lista as $pessoa): ?>
                 <tr>
-                    <td><?=$pessoa[1]?></td>
+                   
+                    <td><?=date("d/m/Y",strtotime($pessoa[1]));?></td>
                     <td><?=$pessoa[2]?></td>
                     <td><?=$pessoa[3]?></td>
                     <td><?=$pessoa[4]?></td>
