@@ -35,4 +35,26 @@ header .nav-right {
     height: 30px;
     border-radius: 50%;
 }
-
+.leftlogin{    
+    width: 50%;
+    height: 100vh; 
+}
+.leftlogin img{
+    max-height: 100vh;
+}
+.rightlogin {
+    background: #FF1B1C;
+    width: 50vw;
+    height: 100vh;
+}
+.rightlogin .loginArea {
+    height: 100vh;    
+    color: #FFF;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.rightlogin .loginArea form a {
+    text-decoration: none;
+    color: #FFF;
+}

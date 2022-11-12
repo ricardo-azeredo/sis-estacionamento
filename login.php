@@ -40,31 +40,40 @@
     }
 ?>
 
-<div class="container">
-    <h1>Login</h1>
+<div class="d-flex justify-content-between align-items-center">
+    <div class="leftlogin">
+        <img src="./images/estacionamento.jpg" alt="">
+    </div>
+    <div class="rightlogin">
+        <div class="loginArea">            
+    
+            <form action="" method="post">
+                <h1>Login</h1>
+                <div class="mb-3">
+                    <label for="" class="form-label">
+                        Email: <br/>
+                        <input
+                         type="email" 
+                         name="email" 
+                         class="form-control" 
+                         value="<?php if(isset($dados['email'])){ echo $dados['email']; } ?>"
+                        >
+                    </label>
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">
+                        Senha: <br/>
+                        <input type="password" name="password" class="form-control">
+                    </label>
+                </div>
+        
+                <input type="submit" value="Salvar" name="SendLogin" class="btn btn-primary" />
+                <h3><a type="button" class="btn btn-link" href="cadastrar.php">Inscrever</a></h3>
+            </form>
 
-    <form action="" method="post">
-        <div class="mb-3">
-            <label for="" class="form-label">
-                Email: <br/>
-                <input
-                 type="email" 
-                 name="email" 
-                 class="form-control" 
-                 value="<?php if(isset($dados['email'])){ echo $dados['email']; } ?>"
-                >
-            </label>
-        </div>
-        <div class="mb-3">
-            <label for="" class="form-label">
-                Senha: <br/>
-                <input type="password" name="password" class="form-control">
-            </label>
         </div>
 
-        <input type="submit" value="Salvar" name="SendLogin" class="btn btn-primary" />
-    </form>
-    <h5><a type="button" class="btn btn-link" href="cadastrar.php">Inscrever</a></h5>
+    </div>
 
 </div>
 
