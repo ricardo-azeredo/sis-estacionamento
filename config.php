@@ -10,10 +10,10 @@ if($status=="local") {
 
 }else {
     //em Produção
-    $db_name = "ricoaz56_estacionamento_db";
+    $db_name = "estacionamento_db";
     $db_host = "localhost";
-    $db_user= "ricoaz56_ricoaz56";
-    $db_pass = "1981Zpaneia@";
+    $db_user= "usuario";
+    $db_pass = "senha";
 }
 
 $pdo = new PDO("mysql:dbname=".$db_name.";host=".$db_host,$db_user,$db_pass);
