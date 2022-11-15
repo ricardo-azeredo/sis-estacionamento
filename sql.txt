@@ -12,7 +12,7 @@ create table clientes(
 	id int not null AUTO_INCREMENT primary key,
     cliente varchar(100) not null,    
     contato varchar(20)
-)
+);
 
 create table veiculos (
     id int not null AUTO_INCREMENT primary key,
@@ -22,7 +22,7 @@ create table veiculos (
     placa varchar(20),
     cliente_id int,
     foreign key (cliente_id) references clientes(id)
-)
+);
 
 create table estacionamento(
     id int not null AUTO_INCREMENT primary key,
